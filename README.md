@@ -1,9 +1,12 @@
 orgmode for Sublime Text 2 & 3
 =============
 
+
 Adds support for [Org mode](http://orgmode.org)'s [.org syntax](http://orgmode.org/worg/dev/org-syntax.html) files to Sublime Text.
 
 Tested **on Windows 7 and Ubuntu 12.04 and Mac OS X 10.7.5** with Sublime Text 2 & 3
+
+**n.b.** I (urbanophile) am in the process of fixing some of the bugs. 
 
 
 Features
