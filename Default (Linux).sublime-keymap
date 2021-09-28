@@ -17,8 +17,8 @@
     },
 
     /* Navigation */
-    { "keys": ["alt+left"], "command": "navigation_history_back"},
-    { "keys": ["alt+right"], "command": "navigation_history_forward"},
+    // { "keys": ["alt+left"], "command": "navigation_history_back"},
+    // { "keys": ["alt+right"], "command": "navigation_history_forward"},
 
     /* Helpit */
     { "keys": ["alt+f1"], "command": "help_it" },
