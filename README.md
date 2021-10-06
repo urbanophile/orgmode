@@ -7,6 +7,9 @@ Adds support for [Org mode](http://orgmode.org)'s [.org syntax](http://orgmode.o
 Tested **on Windows 7 and Ubuntu 12.04 and Mac OS X 10.7.5** with Sublime Text 2 & 3
 
 **n.b.** I (urbanophile) am in the process of fixing some of the bugs. 
+see also:
+https://github.com/aziz/PlainTasks
+
 
 
 Features
@@ -46,3 +49,4 @@ Other
 
 * Forked from https://bitbucket.org/theblacklion/sublime_orgmode/
 * Inspired by http://orgmode.org/
+
