@@ -1,0 +1,53 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+# see also
+name: Testing orgmode syntax
+file_extensions:
+  - orgtest
+  - archive
+scope: source.example-c
+
+contexts:
+  main:
+
+    # Comments begin with white space, then '#' either a whitespace char or a newline
+    - match: '^\s*[#](\s|$)'
+      scope: punctuation.definition.comment.example-c
+      push: line_comment
+
+    # headlines begin with a '*' then a whitespace and finish at the end of the line
+    - match: '^[*]+\s'
+      scope: punctuation.definition.headline.example-c
+      push: line_headline
+
+
+    # check box syntax
+    - match: '\s[ ][+ -][ ]\s'
+      scope: constant.checkbox.example-c
+
+    # keywords for TODO states
+    - match: '\b(TODO|DONE)\b'
+      scope: keyword.todo.example-c
+
+
+# STARS KEYWORD PRIORITY TITLE TAGS
+# e.g.
+# *
+# ** DONE
+# *** Some e-mail
+# **** TODO [#A] COMMENT Title :tag:a2%:
+
+# MARKER is a character among * (bold), = (verbatim), / (italic), + (strike-through), _ (underline), ~ (code).
+
+
+  line_comment:
+    - meta_scope: comment.line.example-c
+    - match: $
+      pop: true
+
+  line_headline:
+    - meta_scope: headline.line.example-c
+    - match: $
+      pop: true
+

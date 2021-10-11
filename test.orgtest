@@ -1,0 +1,42 @@
+# bug vv
+* TODO [1/1]
+  - [X] 
+
+  asdf 
+
+* todo 2 [1/1]
+- [X] 
+
+* todo 3 
+ - [X]
+
+# headline style #1
+
+* parent
+** child1
+
+* parent 
+* parent2
+** child1
+** child2
+*** child3
+
+
+
+# for orgmode headline style #2
+* parent
+  * child
+
+* parent
+  * child
+* parent 
+  * child
+
+* parent
+  * child1 
+  * child2
+
+
+* parent
+  * child 
+    * grandchild

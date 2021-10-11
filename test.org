@@ -1,0 +1,31 @@
+
+# bug vv
+* TODO [1/1]
+  - [X] 
+
+  asdf 
+
+* todo 2 [1/1]
+- [X] 
+
+* todo 3 
+ - [X]
+
+* parent
+
+* parent
+  * child
+
+* parent
+  * child
+* parent 
+  * child
+
+* parent
+  * child1 
+  * child2
+
+
+* parent
+  * child 
+    * grandchild
