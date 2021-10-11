@@ -1,34 +1,34 @@
 %YAML 1.2
 ---
 # See http://www.sublimetext.com/docs/syntax.html
-# see also
+# see also https://orgmode.org/worg/dev/org-syntax.html
 name: Testing orgmode syntax
 file_extensions:
   - orgtest
   - archive
-scope: source.example-c
+scope: source.orgtest
 
 contexts:
   main:
 
     # Comments begin with white space, then '#' either a whitespace char or a newline
     - match: '^\s*[#](\s|$)'
-      scope: punctuation.definition.comment.example-c
+      scope: punctuation.definition.comment.orgtest
       push: line_comment
 
     # headlines begin with a '*' then a whitespace and finish at the end of the line
     - match: '^[*]+\s'
-      scope: punctuation.definition.headline.example-c
+      scope: punctuation.definition.headline.orgtest
       push: line_headline
 
 
     # check box syntax
     - match: '\s[ ][+ -][ ]\s'
-      scope: constant.checkbox.example-c
+      scope: constant.checkbox.orgtest
 
     # keywords for TODO states
     - match: '\b(TODO|DONE)\b'
-      scope: keyword.todo.example-c
+      scope: keyword.todo.orgtest
 
 
 # STARS KEYWORD PRIORITY TITLE TAGS
@@ -42,12 +42,12 @@ contexts:
 
 
   line_comment:
-    - meta_scope: comment.line.example-c
+    - meta_scope: comment.line.orgtest
     - match: $
       pop: true
 
   line_headline:
-    - meta_scope: headline.line.example-c
+    - meta_scope: headline.line.orgtest
     - match: $
       pop: true
 
