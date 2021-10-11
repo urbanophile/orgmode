@@ -18,17 +18,17 @@ contexts:
 
     # headlines begin with a '*' then a whitespace and finish at the end of the line
     - match: '^[*]+\s'
-      scope: punctuation.definition.headline.orgtest
+      scope: markup.heading.headline.orgtest
       push: line_headline
 
 
     # check box syntax
     - match: '\s[ ][+ -][ ]\s'
-      scope: constant.checkbox.orgtest
+      scope: keyword.other.checkbox.orgtest
 
     # keywords for TODO states
     - match: '\b(TODO|DONE)\b'
-      scope: keyword.todo.orgtest
+      scope: keyword.other.todo.orgtest
 
 
 # STARS KEYWORD PRIORITY TITLE TAGS
